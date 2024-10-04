@@ -16,7 +16,7 @@ body{
     background-attachment: fixed;
 }
 main{
-    height: 70%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -140,7 +140,7 @@ pre{
 @media (max-width:1000px){
     pre{
         width: auto;
-        font-size: 25px;
+        font-size: 28px;
         height: auto;
     }
 }
@@ -156,11 +156,11 @@ pre{
         height: 3.2rem;
     }
     pre{
-        width: 200px;
-        font-size: 1.2rem;
+        width: min-content;
+        font-size: 1.8rem;
         padding: 10px;
         height:fit-content;
-        line-height: 30px;
+        line-height: 40px;
     }
     h1{
         margin-left: 20px;
