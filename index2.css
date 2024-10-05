@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    color: rgb(48, 190, 41);
+    font-family: 'poppins';
+}
+body{
+    background-color: rgb(237, 237, 237);
+}
+
+header{
+    z-index: 999;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 8px rgb(96, 96, 96);
+    background-color: #f7f6f6;
+}
+.navbar{
+    background-color: rgb(236, 236, 236);
+    
+}
+.fa-solid.fa-bowl-food{
+    margin-right: 30px;
+}
+
+h1{
+    font-size: 40px;
+    padding: 15px;
+    display: inline-block;
+    padding-left:80px ;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    position: absolute;
+    top:10px;
+    left: 650px;
+    
+}
+
+.navbar i{
+    padding: 2.5px;
+}
+.navbar li{
+    text-align: center;
+    padding: 7px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    margin-right: 50px;
+    margin-top: 12px;
+    letter-spacing: 3px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.navbar a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar a:active{
+    color: rgb(166, 166, 166);
+}
+
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:120px;
+}
+
+.all img{
+    width: 350px;
+    margin: 30px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all h3{
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.all a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+}
+
+.all h3:hover{
+    color: rgb(48, 190, 41);
+    transition: 0.3s;
+}
+
+.all h3:hover .all img{
+    border-color: black;
+    box-shadow: 8px 8px 8px rgb(105, 105, 105);
+    transition: 0.3s;
+}
+.all img:hover{
+    border-color: black;
+    box-shadow: 8px 8px 8px rgb(105, 105, 105);
+    transition: 0.3s;
+}
+
+.all a:visited{
+    text-decoration: none;
+}
+
+.all h3:active{
+    color: rgb(53, 114, 58);
+}
+
+@media (min-width:320px) and (max-width:1200px){
+    .navbar a{
+        display: none;
+    }
+}

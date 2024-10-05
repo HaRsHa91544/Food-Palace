@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD PALACE</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0fccdfff4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-bowl-food"></i>FOOD PALACE</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="signin.html"><i class="fa-solid fa-user"></i> SIGN IN</a></li>
+                <li><a href=""><i class="fa-solid fa-circle-info"></i> HELP</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i> SEARCH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>SIGN IN</h2>
+        <form class="logbox" action="index2.html">
+            <input type="tel" class="box" placeholder="MOBILE NUMBER" required minlength="10" maxlength="10" pattern="[0-9]{10}" name="MN">
+            <input type="password" id="password" class="box" placeholder="PASSWORD" required minlength="8" maxlength="8" name="password" style="position: relative;"><i class="fa-solid fa-eye" onclick="func()"></i>
+            <input type="submit" id="submit" class="box" value="SIGN IN">
+        </form>
+    </main>
+    <script src="script\signin.js"></script>
+</body>
+</html>
