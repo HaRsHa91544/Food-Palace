@@ -190,7 +190,7 @@ h2{
     h1{
         margin-left: 20px;
         padding: 6px;
-        font-size: 1.8rem;
+        font-size: 24px;
     }
     main h2{
         font-size: 1.56rem;
@@ -203,6 +203,7 @@ h2{
     }
     
     .fa-solid.fa-eye{
+        display:none;
         position: absolute;
         top: 305px;
         left: 290px;
