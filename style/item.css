@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    color: rgb(48, 190, 41);
+    font-family: 'open sans';
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    width: 100dvw;
+}
+
+header{
+    left: 0;
+    z-index: 999;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0px 2px 8px rgb(96, 96, 96);    
+    background-color: rgb(246, 246, 246);
+}
+.navbar{
+    background-color: rgb(236, 236, 236);
+    
+}
+.fa-solid.fa-bowl-food{
+    margin-right: 30px;
+}
+
+h1{
+    font-size: 40px;
+    padding: 15px;
+    font-family: "Open Sans";
+    display: inline-block;
+    padding-left:80px ;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    position: absolute;
+    top:10px;
+    left: 650px;
+}
+
+.navbar i{
+    padding: 2.5px;
+}
+.navbar li{
+    text-align: center;
+    padding: 7px;
+    display: inline-block;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    margin-right: 50px;
+    margin-top: 12px;
+    letter-spacing: 3px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.navbar a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar a:active{
+    color: rgb(166, 166, 166);
+}
+
+.heads{
+    background-color: hsl(0, 0%, 96%);
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: black;
+    display: grid;
+    grid-template-columns: auto 10fr 2fr;
+    align-content: center;
+    margin-top: 50px;
+    width:100dvw;
+    height: 120px;
+    box-shadow:  2px 2px 5px 3px rgb(158, 158, 158);
+}
+
+.heads:last-child{
+    margin-bottom: 50px;
+}
+.heads .hh{
+    margin-left: 30px;
+    font-weight: 650;
+}
+
+.fa-solid.fa-circle-plus:not(.cart:hover){
+    color: white;
+}
+
+.fa-solid.fa-circle-plus{
+    color: rgb(48, 190, 41);
+}
+.price{
+    margin-left: 30px;
+    display: flex;
+    justify-self:stretch;
+}
+.cart{
+    height: 40px;
+    width: 140px;
+    display: block;
+    background-color: rgb(48, 190, 41);
+    color: white;
+    border: none;
+    margin-right: 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.cart:hover{
+    border: 0.7px solid white;
+    box-shadow: 4px 4px 8px rgb(144, 144, 144);
+}
+
+.cart:active{
+    border: 1.8px solid white;
+    transition: 0.4s;
+    background-color: rgb(26, 138, 20);
+}
+
+footer{
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    position: sticky;
+    width: 60%;
+    height: 70px;
+    bottom: 20px;
+    box-shadow: 0px 2px 8px rgb(96, 96, 96);    
+    background-color: rgb(255, 255, 255);
+}
+
+footer pre{
+    margin-left: 40px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+#buy{
+    position: relative;
+    margin-right:40px;
+    height: 40px;
+    width: 140px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(48, 190, 41);
+    color: white;
+    padding: 0;
+    cursor: pointer;
+}
+
+.fa-solid.fa-cart-shopping{
+    color: white;
+    margin-left: 0;
+}
+
+#buy:hover{
+    border: 0.7px solid white;
+    transition: 0.3s;
+    box-shadow: 4px 4px 8px rgb(144, 144, 144);
+}
+
+#buy:active{
+    background-color: rgb(26, 138, 20);
+    border: 1.8px solid white;
+    transition: 0.3s;
+}
+
+p{
+    font-size: 35px;
+    margin-top: 80px;
+    color: rgb(237, 237, 237);
+}
+
+@media (max-width:1390px) {
+    .navbar li{
+        margin-right: 20px;
+    }
+}
+@media (max-width:1280px){
+    .navbar ul{
+        display: none;
+    }    
+}
+
+
+
+@media (max-width:760px){
+    header{
+        width: 100%;
+        height: 4rem;
+    }
+    h1{
+        margin-left: 20px;
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+    .heads{
+        font-size: 11px;
+        width: 100%;
+        grid-template-columns: 3fr 1.8fr 0.8fr;
+    }
+    .cart{
+        margin-right: 8px;
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+    footer{
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    footer pre{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    #buy{
+        width: 140px;
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    .price{
+        margin-left: 10px;
+    }
+}
